@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap);
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif!important;
+    height: 100vh;
+    width: 100vw;
+}
+
+.chat-borders {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 50vw;
+    overflow-y: scroll;
+    max-height: 500px;
+    height: 100%;
+    border: 1px solid whitesmoke;
+    position: relative;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.op-msg {
+    margin-left: 10px;
+    margin-top: 10px;
+    min-width: 30%;
+    max-width: 40%;
+    background-color: lightgray;
+    border: .5px solid lightgray;
+    border-radius: 15px;
+    min-height: 30px;
+    color: gray;
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.msg {
+    margin-left: auto;
+    margin-right: 10px;
+    text-align: end!important;
+    min-width: 30%;
+    max-width: 40%;
+    background-color: #0d6efd;
+    border: .5px solid #0d6efd;
+    border-radius: 15px;
+    min-height: 30px;
+    color: white;
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.op-msg p, .msg p {
+    margin: 0px;
+}
+
+.msg p {
+    width: 100%;
+    text-align: end;
+}
+
+.chat-area {
+    position: sticky;
+    top: 100%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.chat-area input {
+    position: relative;
+    border-radius: 20px!important;
+}
+
+.icon {
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    position: absolute;
+    bottom: 5px;
+    top: 5px;
+    right: 5px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    width: 30px;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.icon i {
+    margin-top: 5px;
+}
+
+.icon:hover {
+    color: #0d6efd;
+    background-color: rgb(255, 255, 255);
+}
+
+.message:hover .menu-dots{
+    display: block!important;   
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-dots{
+    padding-top: 2.5px!important;
+    background: transparent!important;
+    border: none!important;
+    display: none!important;
+    height: 20px!important;
+}
